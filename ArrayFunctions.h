@@ -1,0 +1,1 @@
+int GetAbsoluteIndex(int size, int index);

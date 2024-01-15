@@ -1,0 +1,8 @@
+# ninja log v5
+16	395	7268678095001438	CMakeFiles/GameOfLifeC.dir/GameOfLifeC.c.obj	43ced2ae1bc02649
+16	27	0	clean	8c45b54705a541e8
+1007	1310	7269824016945029	GameOfLifeC.exe	1617c8b55fc91b6f
+40	1007	7269824014725060	CMakeFiles/GameOfLifeC.dir/MapStruct.c.obj	b6163a51e72b2b78
+33	998	7269824014645110	CMakeFiles/GameOfLifeC.dir/Main.c.obj	c8609603ee051ecb
+31	745	7269809182420048	CMakeFiles/GameOfLifeC.dir/ArrayFunctions.c.obj	263aeb96c61d5d2c
+38	754	7269809182550052	CMakeFiles/GameOfLifeC.dir/CheckInput.c.obj	80c4b86ddc6fc327
