@@ -23,20 +23,23 @@ MapData newMap(int X, int Y) {
 }
 
 void showMap(const MapData *mapData) {
+	#ifdef _WIN32
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	#endif
 	for (int i = 0; i < mapData->height; i++) {
 		for (int j = 0; j < mapData->width; j++) {
-			if (mapData->map[i][j] == 1)
+			if (mapData->map[i][j] == 1) {
 			#ifdef _WIN32
 				SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
 			#else
-				//
+				printf("\e[0;32m");
 			#endif
-			else {
+			
+			} else {
 				#ifdef _WIN32
 					SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
 				#else
-					//
+					printf("\e[0;31m");
 				#endif
 			}
 				
@@ -46,7 +49,7 @@ void showMap(const MapData *mapData) {
 			#ifdef _WIN32
 			SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 			#else
-			//
+			printf("\e[0;37m");
 			#endif
 		}
 

@@ -3,7 +3,6 @@
 #include <windows.h>
 #else
 #include <unistd.h>
-#include <ncurses.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
